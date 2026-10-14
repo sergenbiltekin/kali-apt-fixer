@@ -1,0 +1,21 @@
+name: Feature request
+description: Suggest an improvement or a new case to detect
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What goes wrong on your network or system today?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Error message or symptom (redacted)
+      render: text
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behaviour
+      description: How should diagnose/fix handle it? Signature checks must stay enabled.
