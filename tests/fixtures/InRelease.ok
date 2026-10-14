@@ -1,0 +1,12 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Kali
+Label: Kali
+Suite: kali-rolling
+Codename: kali-rolling
+Components: main contrib non-free non-free-firmware
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCgAdFiEEfake
+-----END PGP SIGNATURE-----

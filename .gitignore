@@ -1,0 +1,12 @@
+# editors / OS
+*.swp
+*~
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# local scratch and test output
+*.log
+*.tmp
+/tmp/

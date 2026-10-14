@@ -1,0 +1,52 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please redact internal host names, IP addresses and proxy details before pasting output.
+        For security problems use the private report link instead of this form.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of `kali-apt-fixer --version`
+      placeholder: kali-apt-fixer 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Kali / Debian release
+      placeholder: Kali rolling 2026.3, amd64
+    validations:
+      required: true
+  - type: dropdown
+    id: command
+    attributes:
+      label: Command
+      options: [diagnose, fix, restore, upgrade, list-mirrors]
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Source format
+      options: [deb822 (kali.sources), legacy (sources.list), both, not sure]
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: diagnose
+    attributes:
+      label: Output of `sudo kali-apt-fixer diagnose --no-color`
+      render: text
+  - type: textarea
+    id: log
+    attributes:
+      label: Relevant lines from /var/log/kali-apt-fixer.log (optional)
+      render: text
