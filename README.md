@@ -1,5 +1,8 @@
 # kali-apt-fixer
 
+[![CI](https://github.com/sergenbiltekin/kali-apt-fixer/actions/workflows/ci.yml/badge.svg)](https://github.com/sergenbiltekin/kali-apt-fixer/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A single Bash tool that **diagnoses and fixes common Kali Linux APT update problems**,
 especially on corporate or otherwise restricted networks.
 
