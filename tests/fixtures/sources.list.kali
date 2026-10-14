@@ -1,0 +1,2 @@
+# Kali Linux repository
+deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
