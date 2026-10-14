@@ -39,13 +39,20 @@ cd kali-apt-fixer
 sudo install -m 0755 kali-apt-fixer.sh /usr/local/bin/kali-apt-fixer
 ```
 
-or just download the single file:
+or download the single file from the latest release and verify its checksum:
 
 ```bash
-curl -fsSLO https://raw.githubusercontent.com/sergenbiltekin/kali-apt-fixer/main/kali-apt-fixer.sh
+base=https://github.com/sergenbiltekin/kali-apt-fixer/releases/download/v1.0.0
+curl -fsSLO "$base/kali-apt-fixer.sh"
+curl -fsSLO "$base/SHA256SUMS"
+sha256sum -c SHA256SUMS         # must print: kali-apt-fixer.sh: OK
 less kali-apt-fixer.sh          # read it first
 sudo install -m 0755 kali-apt-fixer.sh /usr/local/bin/kali-apt-fixer
 ```
+
+The checksum file is served from the same place as the script, so it protects against
+corrupted downloads, not against a compromised release. Reading the script (or cloning
+and checking the tag) is the stronger check.
 
 > The script never pipes anything into a shell and neither should you.
 
