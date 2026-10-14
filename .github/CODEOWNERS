@@ -1,0 +1,7 @@
+# Default owner for everything in the repository
+*       @sergenbiltekin
+
+# Security-sensitive: runs as root and handles signature verification
+/kali-apt-fixer.sh      @sergenbiltekin
+/SECURITY.md            @sergenbiltekin
+/.github/               @sergenbiltekin
